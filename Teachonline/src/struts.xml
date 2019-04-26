@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC   
+     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"   
+     "http://struts.apache.org/dtds/struts-2.0.dtd">
+     
+     
+<struts>
+    <package name="liu" extends="struts-default">
+        <global-results>
+            <result name="succeed">/common/succeed.jsp</result>
+            <result name="msg">/common/msg.jsp</result>
+        </global-results>
+        
+        <action name="upload" class="com.util.upload" method="upload">
+             <result name="success">/upload/upload_re.jsp</result>
+        </action>
+        
+        <action name="index" class="indexAction" method="index">
+            <result name="success">/site/index.jsp</result>
+        </action>
+        
+        
+        
+        <action name="stuAdd" class="stuAction" method="stuAdd">
+        </action>
+        <action name="stuMana" class="stuAction" method="stuMana">
+            <result name="success">/admin/stu/stuMana.jsp</result>
+        </action>
+        <action name="stuDel" class="stuAction" method="stuDel">
+        </action>
+        <action name="stuEdit" class="stuAction" method="stuEdit">
+        </action>
+        
+        
+        
+        
+        
+        <action name="teaAdd" class="teaAction" method="teaAdd">
+        </action>
+        <action name="teaDel" class="teaAction" method="teaDel">
+        </action>
+        <action name="teaMana" class="teaAction" method="teaMana">
+            <result name="success">/admin/tea/teaMana.jsp</result>
+        </action>
+        <action name="teaEdit" class="teaAction" method="teaEdit">
+        </action>
+        
+        
+        <action name="liuyanAdd" class="liuyanAction" method="liuyanAdd">
+        </action>
+        <action name="liuyanMana" class="liuyanAction" method="liuyanMana">
+             <result name="success">/atea/liuyan/liuyanMana.jsp</result>
+        </action>
+        <action name="liuyanDel" class="liuyanAction" method="liuyanDel">
+        </action>
+        <action name="liuyanHuifu" class="liuyanAction" method="liuyanHuifu">
+        </action>
+        <action name="liuyanAll" class="liuyanAction" method="liuyanAll">
+             <result name="success">/site/liuyan/liuyanAll.jsp</result>
+        </action>
+        <action name="liuyanDetail" class="liuyanAction" method="liuyanDetail">
+             <result name="success">/site/liuyan/liuyanDetail.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        
+        <action name="docAdd" class="docAction" method="docAdd">
+        </action>
+        <action name="docDel" class="docAction" method="docDel">
+        </action>
+        <action name="docMana" class="docAction" method="docMana">
+            <result name="success">/atea/doc/docMana.jsp</result>
+        </action>
+        <action name="docAll" class="docAction" method="docAll">
+            <result name="success">/site/doc/docAll.jsp</result>
+        </action>
+        <action name="docDetailQian" class="docAction" method="docDetailQian">
+            <result name="success">/site/doc/docDetailQian.jsp</result>
+        </action>
+        
+        
+        <action name="shipinAdd" class="shipinAction" method="shipinAdd">
+        </action>
+        <action name="shipinDel" class="shipinAction" method="shipinDel">
+        </action>
+        <action name="shipinMana" class="shipinAction" method="shipinMana">
+             <result>/atea/shipin/shipinMana.jsp</result>
+        </action>
+        <action name="shipinAll" class="shipinAction" method="shipinAll">
+             <result>/site/shipin/shipinAll.jsp</result>
+        </action>
+        <action name="shipinDetailQian" class="shipinAction" method="shipinDetailQian">
+             <result>/site/shipin/shipinDetailQian.jsp</result>
+        </action>
+        
+        
+        <action name="shitiAdd" class="shitiAction" method="shitiAdd">
+        </action>
+        <action name="shitiDel" class="shitiAction" method="shitiDel">
+        </action>
+        <action name="shitiMana" class="shitiAction" method="shitiMana">
+            <result name="success">/atea/shiti/shitiMana.jsp</result>
+        </action>
+        <action name="shitiAll" class="shitiAction" method="shitiAll">
+            <result name="success">/site/shiti/shitiAll.jsp</result>
+        </action>
+        <action name="shitiDetailQian" class="shitiAction" method="shitiDetailQian">
+            <result name="success">/site/shiti/shitiDetailQian.jsp</result>
+        </action>
+        
+        
+        
+        
+        
+        
+        
+    </package>
+</struts>
